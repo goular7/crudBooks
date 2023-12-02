@@ -30,7 +30,7 @@ const Books = () => {
 
   return (
     <div>
-     <h1>Lama Book Shop</h1>
+     <h1>Goulart, CRUD Book</h1>
       <div className="books">
        {books.map((book) => (
           <div className="book" key={book.id}>
@@ -38,14 +38,15 @@ const Books = () => {
             <h2>{book.title}</h2>
            <p>{book.desc}</p>
            <span>{book.price}</span>
-           <button className="delete" onClick={()=>handleDelete(book.id)}>Delete</button>
-           <button className="update"><Link to={`/update/${book.id}`}>Update</Link></button>
+           <br />
+           <div className='buttonContainer'>
+           <button className="update"><Link to={`/update/${book.id}`}>Atualizar Livro</Link></button>
+           <button className="delete" onClick={()=>handleDelete(book.id)}>Apagar Livro</button>
+           </div>
          </div>
         ))}
       </div>
-      <button>
-        <Link to="/Add">Add new book</Link>
-        </button>
+      <button className="addBook"><Link to="/Add">Adicionar Novo Livro</Link></button>
     </div>
   );
 };
