@@ -29,12 +29,12 @@ const Add = () => {
   console.log(book)
   return (
     <div className='form'>
-      <h1>Add New Book</h1>
-      <input type="text" placeholder='title' onChange={handleChange} name="title"/>
-      <input type="text" placeholder='desc' onChange={handleChange} name="desc"/>
-      <input type="number" placeholder='price' onChange={handleChange} name="price"/>
-      <input type="text" placeholder='cover' onChange={handleChange} name="cover"/>
-      <button className="formButton" onClick={handleClick}>Add</button>
+      <h1>Adicionar Novo Livro</h1>
+      <input type="text" placeholder='Título' onChange={handleChange} name="title"/>
+      <input type="text" placeholder='Descrição' onChange={handleChange} name="desc"/>
+      <input type="number" placeholder='Valor' onChange={handleChange} name="price"/>
+      <input type="text" placeholder='img' onChange={handleChange} name="cover"/>
+      <button className="formButton" onClick={handleClick}>Adicionar Livro</button>
     </div>
   )
 }

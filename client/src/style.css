@@ -27,28 +27,45 @@ img{
     background-color: #333;
 }
 
-.delete{
+.update{
+    text-align: center;
     border: none;
-    padding: 3px 6px;
-    background-color: white;
+    padding: 8px 10px;;
     cursor: pointer;
-    border: 1px solid rgb(204, 204, 243);
-    color: rgb(204, 100, 100);
+    background-color: rgb(139, 139, 243);
+    color: white;
+    font-weight: bold;
+    margin-right: 10px;
 }
 
-.update{
+.delete{
     border: none;
-    padding: 3px 6px;
-    background-color: white;
+    padding: 8px 10px;
     cursor: pointer;
-    border: 1px solid rgb(204, 204, 243);
-    color: rgb(139, 139, 243);
+    background-color: rgb(204, 100, 100);
+    color: white;
+    font-weight: bold;
+}
+
+.addBook{
+    margin-top: 12px;
+    border: none;
+    height: 35px;
+    width: 232px;
+    cursor: pointer;
+    background-color: rgb(10, 242, 95);
+    color: white;
+    font-weight: bold;
 }
 
 .form{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 input{
@@ -59,8 +76,10 @@ input{
 
 .formButton{
     border: none;
-    padding: 10px;
-    background-color: #2664f5;
+    height: 40px;
+    width: 273px;
+    cursor: pointer;
+    background-color: rgb(5, 242, 5);
     color: white;
     font-weight: bold;
 }
